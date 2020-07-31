@@ -1,10 +1,16 @@
 import React from 'react';
 import './App.css';
 
+import Header from './components/header/Header';
+import Content from './components/content/Content';
+import Footer from './components/footer/Footer';
+
 function App() {
   return (
     <div class="container">
-      Hello world!
+      <Header />
+      <Content />
+      <Footer />
     </div>
   );
 }
