@@ -1,10 +1,12 @@
 import React from 'react';
 
-import '../../../css/components/footer/footer.scss';
-
 class Footer extends React.Component {
 
-    render = () => <footer>To jest Footer</footer>
+    render = () => {
+        return (
+            <footer className="footer">&copy; Copyright by slub-kasi-i-patryka.pl</footer>
+        ); 
+    }
 
 }
 

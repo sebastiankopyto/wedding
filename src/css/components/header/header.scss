@@ -12,7 +12,6 @@
         padding: 80px 0;
         background-color: rgba(#fff, .7);
         color: rgba(#000, .85);
-        font-family: 'Parisienne', cursive;
         box-shadow: 0 0 10px #fff;
     }
 
@@ -20,10 +19,29 @@
         font-size: 72px;
         margin: 0 0 .4em 0;
         line-height: 1em;
+        font-family: 'Parisienne', cursive;
+
+        @media screen and (max-width: 700px) {
+            font-size: 52px;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 36px;
+        }
     }
 
     &__datetime {
+        font-family: 'Lato', sans-serif;
+        font-style: italic;
         font-size: 42px;
         font-weight: bold;
+        
+        @media screen and (max-width: 700px) {
+            font-size: 34px;
+        }
+
+        @media screen and (max-width: 450px) {
+            font-size: 24px;
+        }
     }
 }
