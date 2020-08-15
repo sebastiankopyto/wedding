@@ -1,7 +1,8 @@
 import React from 'react';
 
-import Couple from './Couple';
+import Couple from './couple/Couple';
 import Animation from './Animation';
+import Clock from './clock/Clock';
 import EventInfo from './EventInfo';
 
 class Content extends React.Component {
@@ -11,6 +12,7 @@ class Content extends React.Component {
             <div className="content">
                 <Couple />
                 <Animation />
+                <Clock />
                 <EventInfo />
             </div>
         );

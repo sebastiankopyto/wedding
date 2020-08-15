@@ -2,7 +2,7 @@
     padding-bottom: 60px;
 
     &__container {
-        max-width: 1340px;
+        max-width: $maxWidth;
         height: 100%;
         margin: 0 auto;
         padding: 0 20px;
@@ -15,7 +15,7 @@
     }
 
     &__header {
-        font-family: 'Lato', sans-serif;
+        font-family: $font-decor;
         font-style: italic;
 
         &-text {
@@ -29,11 +29,11 @@
 
     &__couple {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         width: 100%;
         margin-top: 3%;
 
-        @media screen and (max-width: 700px) {
+        @media (max-width: 700px) {
             flex-direction: column;
             align-items: center;
         }
@@ -42,14 +42,27 @@
     &__person {
         position: relative;
         padding: 15px 15px 0 15px;
-        background-color: hsl(0, 100%, 96%);
         width: 100%;
-        max-width: 450px;
+        max-width: 300px;
+
+        @media (max-width: $mobileWidth) {
+            max-width: 250px;
+        }
     }
 
     &__label {
         position: relative;
         display: block;
+
+        &:hover {
+            cursor: pointer;
+
+            .couple {
+                &__figure {
+                    opacity: .5;
+                }
+            }
+        }
     }
     
     &__figure {
@@ -59,18 +72,14 @@
         position: relative;
         overflow: hidden;
         transition: opacity .1s;
+        border-radius: 50%;
 
         &:before {
             float: left;
             width: 1px;
             height: 0;
             content: '';
-            padding-top: 125%;
-        }
-
-        &:hover {
-            opacity: .5;
-            cursor: pointer;
+            padding-top: 100%;
         }
     }
 
@@ -85,7 +94,7 @@
     }
 
     &__name {
-        font-family: 'Parisienne', cursive;
+        font-family: $font-decor;
         width: 100%;
         text-align: center;
         font-size: 32px;
@@ -110,7 +119,7 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        font-family: 'Lato', sans-serif;
+        font-family: $font-main;
         font-size: 24px;
     }
 
@@ -123,21 +132,32 @@
                     opacity: 1;
                     overflow: auto;
                 }
+
+                &__label {
+                    &:hover {
+                        .couple {
+                            &__figure {
+                                opacity: 1;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
     &__heart {
         opacity: .7;
-        width: 150px;
+        width: 10%;
         margin: 0 10px 10% 10px;
 
         @media screen and (max-width: 1150px) {
             width: 100px;
         }
 
-        @media screen and (max-width: 700px) {
-            margin: 20px 0;
+        @media screen and (max-width: $mobileWidth) {
+            margin: 50px 0;
+            width: 80px;
         }
     }
 }

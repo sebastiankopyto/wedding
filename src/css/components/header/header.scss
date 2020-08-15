@@ -19,7 +19,7 @@
         font-size: 72px;
         margin: 0 0 .4em 0;
         line-height: 1em;
-        font-family: 'Parisienne', cursive;
+        font-family: $font-decor;
 
         @media screen and (max-width: 700px) {
             font-size: 52px;
@@ -31,7 +31,7 @@
     }
 
     &__datetime {
-        font-family: 'Lato', sans-serif;
+        font-family: $font-main;
         font-style: italic;
         font-size: 42px;
         font-weight: bold;
