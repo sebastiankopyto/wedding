@@ -72,8 +72,8 @@ class Couple extends React.Component {
         return (
             <section id="para-mloda" className="couple" ref={this.container}>
                 <div className="couple__container">
-                    <header className="couple__header">
-                        <h1 className="couple__header-text">
+                    <header className="section__header couple__header">
+                        <h1 className="section__header-text couple__header-text">
                             My
                         </h1>
                     </header>

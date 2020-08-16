@@ -15,8 +15,7 @@
     }
 
     &__header {
-        font-family: $font-decor;
-        font-style: italic;
+        margin: 40px 0 100px 0;
 
         &-text {
             font-size: 56px;
@@ -24,6 +23,10 @@
             @media screen and(max-width: 700px) {
                 font-size: 42px;
             }
+        }
+
+        @media (max-width: $mobileWidth) {
+            margin-bottom: 100px;
         }
     }
 
@@ -94,7 +97,8 @@
     }
 
     &__name {
-        font-family: $font-decor;
+        @include fontDecorNormal();
+        
         width: 100%;
         text-align: center;
         font-size: 32px;

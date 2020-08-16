@@ -6,3 +6,13 @@ $font-main: 'Lato', sans-serif;
 
 $color-pink: #FCE4DE;
 $color-red: #f74d4d;
+
+@mixin fontDecorBold() {
+    font-family: $font-decor;
+    font-weight: bold;
+}
+
+@mixin fontDecorNormal() {
+    font-family: $font-decor;
+    font-weight: normal;
+}

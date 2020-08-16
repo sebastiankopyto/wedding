@@ -8,14 +8,8 @@
     }
 
     &__header {
-        text-align: center;
-        padding: 40px 0;
-
-        &-text {
-            font-family: $font-decor;
-            font-size: 56px;
-            margin: 0;
-        }
+        padding-top: 40px;
+        margin-bottom: 100px;
     }
 
     &__content {
@@ -56,8 +50,9 @@
     }
 
     &__number {
+        @include fontDecorBold();
+        
         font-size: 56px;
-        font-family: $font-decor;
 
         @media (max-width: $mobileWidth) {
             font-size: 30px;

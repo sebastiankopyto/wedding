@@ -52,8 +52,8 @@ class Clock extends React.Component {
         return (
             <section id="o-wydarzeniu" className="clock">
                 <div className="clock__container">
-                    <header className="clock__header">
-                        <h2 className="clock__header-text">
+                    <header className="section__header clock__header">
+                        <h2 className="section__header-text clock__header-text">
                             Pozostało
                         </h2>
                     </header>
