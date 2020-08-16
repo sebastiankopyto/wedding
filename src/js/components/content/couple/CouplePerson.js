@@ -9,27 +9,21 @@ class CouplePerson extends React.Component {
     }
 
     render = () => {
-        const {name, photo, description} = this.person;
+        const {name, photo} = this.person;
         
         return (
             <article ref={this.props.innerRef} className="couple__person">
-                <label className="couple__label" htmlFor={`person${this.index}`}>
-                    <figure className="couple__figure">
-                        <img className="couple__image" src={photo} alt="Man" />
-                    </figure>
-                    <div className="couple__description">
-                        {description}
-                    </div>
-                    <div className="couple__name">
-                        {name}
-                    </div>
-                </label>
+                <figure className="couple__figure">
+                    <img className="couple__image" src={photo} alt="Man" />
+                </figure>
+                <div className="couple__name">
+                    {name}
+                </div>
             </article>
         )
     }
 
 }
 
-// parent is able to get ref from this component
-
+// parent is able to get ref from child component
 export default React.forwardRef((props, ref) => <CouplePerson innerRef={ref} {...props} />);

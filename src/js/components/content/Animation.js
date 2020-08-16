@@ -20,8 +20,8 @@ class Animation extends React.Component {
     componentDidMount = () => {
         const container = this.imageRef.current.children[0];
         const svg = container.children[0];
-        console.log(svg);
         const svgElements = svg.children;
+
         const [,, woman, man] = svgElements;
         
         gsap.from(man, {

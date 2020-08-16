@@ -52,21 +52,6 @@
             max-width: 250px;
         }
     }
-
-    &__label {
-        position: relative;
-        display: block;
-
-        &:hover {
-            cursor: pointer;
-
-            .couple {
-                &__figure {
-                    opacity: .5;
-                }
-            }
-        }
-    }
     
     &__figure {
         margin: 0;
@@ -76,6 +61,7 @@
         overflow: hidden;
         transition: opacity .1s;
         border-radius: 50%;
+        background-color: #fff;
 
         &:before {
             float: left;
@@ -125,29 +111,6 @@
         justify-content: center;
         font-family: $font-main;
         font-size: 24px;
-    }
-
-    &__checkbox {
-        display: none;
-
-        &:checked + .couple__person {
-            .couple {
-                &__description {
-                    opacity: 1;
-                    overflow: auto;
-                }
-
-                &__label {
-                    &:hover {
-                        .couple {
-                            &__figure {
-                                opacity: 1;
-                            }
-                        }
-                    }
-                }
-            }
-        }
     }
 
     &__heart {

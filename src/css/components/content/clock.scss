@@ -37,12 +37,13 @@
                 content: ':';
                 position: absolute;
                 left: 100%;
-                top: 12px;
-                font-size: 30px;
+                top: 20px;
+                font-size: 56px;
                 color: $color-red;
                 transform: translateY(-50%);
 
                 @media (max-width: $mobileWidth) {
+                    top: 12px;
                     font-size: 36px;
                 }
             }

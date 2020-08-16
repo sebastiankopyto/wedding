@@ -22,12 +22,10 @@ class Couple extends React.Component {
         this.persons = [
             {
                 name: 'Pani Młoda',
-                description: 'Cześć, jestem Kasia',
                 photo: woman,
             },
             {
                 name: 'Pan Młody',
-                description: 'Cześć, jestem Patryk',
                 photo: man,
             }
         ]
@@ -79,12 +77,10 @@ class Couple extends React.Component {
                     </header>
 
                     <section className="couple__couple">
-                        <input type="checkbox" autoComplete="off" className="couple__checkbox" name="person1" id="person1"/>
                         <CouplePerson person={this.persons[0]} index={1} innerRef={this.person1} />
 
                         <img className="couple__heart" src={heart} alt="heart" />
 
-                        <input type="checkbox" autoComplete="off" className="couple__checkbox" name="person2" id="person2"/>
                         <CouplePerson person={this.persons[1]} index={2} innerRef={this.person2} />
                     </section>
                 </div>
