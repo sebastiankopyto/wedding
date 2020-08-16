@@ -3,7 +3,7 @@ import React from 'react';
 import Couple from './couple/Couple';
 import Animation from './Animation';
 import Clock from './clock/Clock';
-import EventInfo from './EventInfo';
+import EventInfo from './eventInfo/EventInfo';
 
 class Content extends React.Component {
 
